@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <div>
+        <form action="/" method="post" autocomplete="off">
+            <div class="form-group">
+                <label for="ticker">Ticker Symbol</label>
+                <input type="text" name="ticker">
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+        <p>{{ ticker }}: {{ price }}</p>
+    </div>
+{% endblock %}
